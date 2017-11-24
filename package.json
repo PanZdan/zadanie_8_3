@@ -6,7 +6,7 @@
   "scripts": {
     "test": "npm run test:html \"test:js\" ",
     "test:html": "glob-run nu-html-checker *.html",
-    "test:js": "jshint js/*.js",
+    "test:js": "glob-run jshint js/*.js",
     
     "build": "npm run build:clean && npm run build:sass && npm run build:autoprefixer && npm run test",
     "build:clean": "rimraf css/",
